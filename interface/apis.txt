@@ -1,0 +1,4 @@
+Photos: 	https://developers.google.com/photos/library/guides/get-started-java
+Calendar: 	https://developers.google.com/calendar/quickstart/js
+Accuweather: 	https://developer.accuweather.com/accuweather-forecast-api/apis
+Tasks: 		https://developers.google.com/tasks/quickstart/js

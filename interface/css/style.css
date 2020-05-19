@@ -1,0 +1,56 @@
+.time-date {
+    display: block;
+    position: relative;
+    margin-left: 10px;
+}
+
+.time {
+    font-size: 92px;
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    width: 3em;
+    float: left;
+    margin: 0;
+    position: relative;
+}
+
+.time-subcontainer {
+    float: right;
+    width: 0.5em;
+    top: 0.17em;
+    position: relative;
+}
+
+.time-ss {
+    font-size: 0.4em;
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    float: left;
+    position: relative;
+}
+
+.time-ampm {
+    font-size: 0.3em;
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    float: left;
+    position: relative;
+}
+
+.date {
+    font-size: 40px;
+    font-family: roboto, sans-serif;
+    float: left;
+    position: absolute;
+    top: 2.5em;
+}
+
+.weekday {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.date-mm-dd {
+    font-size: 0.7em;
+    font-weight: 300;
+}
