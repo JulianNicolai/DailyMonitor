@@ -49,7 +49,7 @@ function hour12_adjust(second, minute, hour, hour24, ampm){
 
 function clock_change(second, minute, hour24){
 	second++
-	console.log(second)
+	// console.log(second)
 	if (second >= 60) {
 		second = 0;
 		minute++
@@ -62,7 +62,7 @@ function clock_change(second, minute, hour24){
 
 	if (hour24 >= 24) {
 		hour24 = 0;
-		console.log("New Day!")
+		// console.log("New Day!")
 	}
 	
 	return [second, minute, hour24]
@@ -82,7 +82,6 @@ function main(data) {
 	var millisecond = parseInt(timeDate.substring(20,23));
 	var offset = 1000 - millisecond;
 	var ampm = "";
-	var reload_flag = false;
 
 	var strSec;
 	var strMin;
@@ -131,33 +130,29 @@ function main(data) {
 			
 			update_clock(strSec, strMin, strHr, ampm, weekday, month, day)
 			
-
 			if (strHr == '12' && strMin == '00' && strSec == '00' && ampm == "AM") {
-				reload_flag = true;
-				clearInterval(clock)
-				
+				location.reload();
+				// clearInterval(clock)
 			}
 
 		}, 1000);
 	}, offset);
-	
-	if (reload_flag == true) {
-		console.log("here")
-		return true;
-	}
 }
+
+var fetch_location = "http://worldtimeapi.org/api/ip"
+// var fetch_location = "json/data.json"
 
 function call_data(){
 	
 	document.addEventListener("DOMContentLoaded", function(event) { 
 	
-	fetch('json/data.json')
+	fetch(fetch_location)
 		.then(function(response) {
 			return response.json();
 		})
 		.then(function(data) {
 		
-			main(data)
+			main(data);
 
 		})
 		.catch(function(err) {
