@@ -6,6 +6,28 @@ function update_clock(strSec, strMin, strHr, ampm, weekday, month, day) {
 	document.getElementsByClassName("date-mm-dd")[0].innerHTML = month + " " + String(day);
 }
 
+function add_zeros(hour, minute, second) {
+	if (second < 10) {
+		strSec = "0" + String(second);
+	} else {
+		strSec = String(second);
+	}
+
+	if (minute < 10) {
+		strMin = "0" + String(minute);
+	} else {
+		strMin = String(minute);
+	}
+
+	if (hour < 10) {
+		strHr = "0" + String(hour);
+	} else {
+		strHr = String(hour);
+	}
+
+	return [strSec, strMin, strHr]
+}
+
 function hour12_adjust(second, minute, hour, hour24, ampm){
 	
 	var strSec;
@@ -26,25 +48,9 @@ function hour12_adjust(second, minute, hour, hour24, ampm){
 		ampm = "AM";
 	}
 	
-	if (second < 10) {
-		strSec = "0" + String(second);
-	} else {
-		strSec = String(second);
-	}
-
-	if (minute < 10) {
-		strMin = "0" + String(minute);
-	} else {
-		strMin = String(minute);
-	}
-
-	if (hour < 10) {
-		strHr = "0" + String(hour);
-	} else {
-		strHr = String(hour);
-	}
+	timeArr = add_zeros(hour, minute, second);
 	
-	return [strSec, strMin, strHr, ampm]
+	return [timeArr[0], timeArr[1], timeArr[2], ampm]
 }
 
 function clock_change(second, minute, hour24){
@@ -68,7 +74,7 @@ function clock_change(second, minute, hour24){
 	return [second, minute, hour24]
 }
 
-function main(data) {
+function main_time(data) {
 	var timeDate = data.datetime;
 	var weekday = data.day_of_week;
 
@@ -99,36 +105,44 @@ function main(data) {
 
 	var time = clock_change(second, minute, hour24)
 
-	second = time[0]
-	minute = time[1]
-	hour24 = time[2]
+	second = time[0];
+	minute = time[1];
+	hour24 = time[2];
 
 	var hour12time = hour12_adjust(second, minute, hour, hour24, ampm);
 
-	strSec = hour12time[0]
-	strMin = hour12time[1]
-	strHr = hour12time[2]
-	ampm = hour12time[3]
+	strSec = hour12time[0];
+	strMin = hour12time[1];
+	strHr = hour12time[2];
+	ampm = hour12time[3];
+
+	localStorage.setItem("currentSec", strSec);
+	localStorage.setItem("currentMin", strMin);
+	localStorage.setItem("currentHr", add_zeros(hour24, minute, second)[2]);
 
 	update_clock(strSec, strMin, strHr, ampm, weekday, month, day)
 	
-	setTimeout(function(){
-		clock = setInterval(function(){
+	setTimeout(function() {
+		clock = setInterval(function() {
 			
-			time = clock_change(second, minute, hour24)
+			time = clock_change(second, minute, hour24);
 			
-			second = time[0]
-			minute = time[1]
-			hour24 = time[2]
+			second = time[0];
+			minute = time[1];
+			hour24 = time[2];
 			
 			hour12time = hour12_adjust(second, minute, hour, hour24, ampm);
 			
-			strSec = hour12time[0]
-			strMin = hour12time[1]
-			strHr = hour12time[2]
-			ampm = hour12time[3]
+			strSec = hour12time[0];
+			strMin = hour12time[1];
+			strHr = hour12time[2];
+			ampm = hour12time[3];
 			
-			update_clock(strSec, strMin, strHr, ampm, weekday, month, day)
+			localStorage.setItem("curSec", strSec);
+			localStorage.setItem("curMin", strMin);
+			localStorage.setItem("curHr", add_zeros(hour24, minute, second)[2]);
+
+			update_clock(strSec, strMin, strHr, ampm, weekday, month, day);
 			
 			if (strHr == '12' && strMin == '00' && strSec == '00' && ampm == "AM") {
 				location.reload();
@@ -140,7 +154,7 @@ function main(data) {
 }
 
 var fetch_location = "http://worldtimeapi.org/api/ip"
-// var fetch_location = "json/data.json"
+// var fetch_location = "json/time.json"
 
 function call_data(){
 	
@@ -152,7 +166,7 @@ function call_data(){
 		})
 		.then(function(data) {
 		
-			main(data);
+			main_time(data);
 
 		})
 		.catch(function(err) {

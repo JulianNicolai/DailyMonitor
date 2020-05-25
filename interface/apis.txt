@@ -1,5 +1,7 @@
 Photos: 	https://developers.google.com/photos/library/guides/get-started-java
 Calendar: 	https://developers.google.com/calendar/quickstart/js
 Accuweather: 	https://developer.accuweather.com/accuweather-forecast-api/apis
+Openweather:	https://openweathermap.org/forecast5
+		api.openweathermap.org/data/2.5/forecast?id=6094817&appid=3abe64cd479975f5e36a719f2181af52
 Tasks: 		https://developers.google.com/tasks/quickstart/js
 Time:		http://worldtimeapi.org/api/ip
