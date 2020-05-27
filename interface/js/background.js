@@ -89,7 +89,7 @@ function make_filename(imgNum, prefix) {
     return imgNumStr
 }
 
-function main_bg() {
+function main_bg(numOfDayImgs, numOfNightImgs, sunriseEpoch, sunsetEpoch) {
     var numOfDayImgs = 42;
     var numOfNightImgs = 28;
     var sunriseEpoch = 1590312192; 
@@ -117,6 +117,6 @@ window.onload = function () {
 
         main_bg();
 
-    }, 900000)
+    }, 20000)
 }
 

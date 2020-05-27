@@ -10,10 +10,7 @@ body {
     text-shadow:    1px 1px 4px rgba(0, 0, 0, 0.8),
                     2px 2px 6px rgba(0, 0, 0, 0.6);
     color: white;
-    /* --bg-img-url: url('/interface/image.jpg'); */
-    /* background-image: url('/interface/image.jpg'); */
     background-repeat: no-repeat;
-    
     animation-name: bgFadeIn;
     animation-duration: 1s;
 }
@@ -22,7 +19,6 @@ body {
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /* background: url('/interface/image.jpg'); */
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -107,3 +103,144 @@ body {
     font-size: 0.7em;
     font-weight: 300;
 }
+
+.weather {
+    /* background-color: turquoise; */
+    float: left;
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    width: Calc(100% - 40px);
+}
+
+.forecast {
+    /* background-color: cyan; */
+    position: absolute;
+    bottom: 0;
+    margin-left: 20%;
+    width: Calc(80% - 40px);
+}
+
+.day {
+    min-width: 150px;
+    min-height: 219px;
+    width: 20vh;
+    height: 29.2vh;
+    /* background-color: blueviolet; */
+    float: left;
+    /* border-color: black; */
+    /* border-style: dashed; */
+    /* border-width: 1px; */
+    margin-left: 3%;
+}
+
+.weather-weekday, .temp {
+    position: relative;
+    font-family: roboto, sans-serif;
+    font-size: 35px;
+}
+
+.weather-weekday {
+    /* background-color: cornflowerblue; */
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.div-icon {
+    float: none;
+    display: inline-block;
+}
+
+.icon {
+    width: 60%;
+    margin: 10% 20% 10% 20%;
+}
+
+.high {
+    /* background-color: chartreuse; */
+    float: left;
+    margin-left: 8%;
+}
+
+.low {
+    /* background-color: chartreuse; */
+    float: right;
+    margin-right: 8%;
+}
+
+.today {
+    /* background-color: crimson; */
+    float: left;
+    position: relative;
+    width: 20%;
+    font-family: roboto, sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.wind {
+    clear: left;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.wind-icon {
+    width: 1.6em;
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+    transform: translateY(-3px);
+}
+
+.suntime {
+    float: left;
+    margin-bottom: 20px;
+    /* background-color: darkgreen; */
+}
+
+.suntime-icon{
+    width: 1.5em;
+    float: left;
+}
+
+.sunrise-icon, .sunset-icon, .sunrise-time, .sunset-time{
+    font-size: 25px;
+    float: left;
+}
+
+.sunrise-icon, .sunset-icon {
+    margin: 0 10px 0 10px; 
+    transform: translateY(2px);
+    width: 0.7em;
+}
+
+.sunrise-icon {
+    transform: rotate(90deg) translateX(6px);
+}
+
+.sunset-icon {
+    transform: rotate(-90deg) translateY(-0.9px) translateX(-6px);    
+}
+
+.sunrise, .sunset {
+    clear: left;
+}
+
+.current-temp-wrap {
+    clear: left;
+    font-size: 85px;
+    /* background-color: darkmagenta; */
+}
+
+.current-temp {
+    float: left;
+}
+
+.current-icon {
+    width: 1em;
+    float: left;
+    margin-left: 30px;
+    transform: translateY(10px);
+}
+

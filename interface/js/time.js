@@ -156,7 +156,7 @@ function main_time(data) {
 var fetch_location = "http://worldtimeapi.org/api/ip"
 // var fetch_location = "json/time.json"
 
-function call_data(){
+function call_time_data(){
 	
 	document.addEventListener("DOMContentLoaded", function(event) { 
 	
@@ -176,14 +176,8 @@ function call_data(){
 	});
 }
 
-if (call_data()) {
+if (call_time_data()) {
 	window.location.reload();
 }
-
-/*clock = setInterval(function(){
-	call_data()
-}, 10000);
-
-*/
 
 
