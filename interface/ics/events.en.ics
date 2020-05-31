@@ -1,0 +1,273 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:Data::ICal 0.24
+X-PUBLISHED-TTL:1440
+X-WR-CALDESC:Solid Waste and Recycling
+X-WR-CALNAME:14 Coach house Gate\, Ottawa\, Ontario\, Canada
+X-WR-TIMEZONE:America/Toronto
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200519
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-05-19-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200525
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-05-25-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200601
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-06-01-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200608
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-06-08-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200615
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-06-15-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200622
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-06-22-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200629
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-06-29-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200706
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-07-06-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200713
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-07-13-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200720
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-07-20-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200727
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-07-27-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200804
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-08-04-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200810
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-08-10-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200817
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-08-17-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200824
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-08-24-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200831
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-08-31-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200908
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-09-08-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200914
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-09-14-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200921
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-09-21-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20200928
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-09-28-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201005
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-10-05-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201013
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-10-13-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201019
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-10-19-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201026
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-10-26-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201102
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-11-02-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201109
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-11-09-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201116
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-11-16-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201123
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-11-23-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201130
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-11-30-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201207
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-12-07-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201214
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-12-14-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Black bin\, green bin\, and yard trimmings - Using the green bi
+ n = clean and easy. You can reuse your plastic bags for organic waste and 
+ dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201221
+SUMMARY:Black bin\, green bin\, and yard trimmings
+UID:2020-12-21-Ottawa-waste-@recollect.net
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Garbage\, blue bin\, green bin\, and yard trimmings - Using the
+  green bin = clean and easy. You can reuse your plastic bags for organic w
+ aste and dog feces. Visit ottawa.ca/greenbin
+DTSTART;VALUE=DATE:20201228
+SUMMARY:Garbage\, blue bin\, green bin\, and yard trimmings
+UID:2020-12-28-Ottawa-waste-@recollect.net
+END:VEVENT
+END:VCALENDAR

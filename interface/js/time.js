@@ -152,31 +152,4 @@ function main_time(data) {
 	}, offset);
 }
 
-var fetch_location = "http://worldtimeapi.org/api/ip"
-//var fetch_location = "json/time.json"
-
-function call_time_data(){
-	
-	document.addEventListener("DOMContentLoaded", function(event) { 
-	
-	fetch(fetch_location)
-		.then(function(response) {
-			return response.json();
-		})
-		.then(function(data) {
-		
-			main_time(data);
-
-		})
-		.catch(function(err) {
-			console.log("ERROR (Time):", err);
-		})
-
-	});
-}
-
-if (call_time_data()) {
-	window.location.reload();
-}
-
 

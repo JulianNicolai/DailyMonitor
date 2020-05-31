@@ -106,18 +106,3 @@ function main_bg(numOfDayImgs, numOfNightImgs) {
         });
     });
 }
-
-var numOfDayImgs = 42;
-var numOfNightImgs = 28;    
-
-window.onload = function () {
-
-    main_bg(numOfDayImgs, numOfNightImgs);
-
-    setInterval(function () {
-
-        main_bg(numOfDayImgs, numOfNightImgs);
-
-    }, 20000)
-}
-

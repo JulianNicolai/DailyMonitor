@@ -92,30 +92,3 @@ function main_accuweather(data){
 	}
 }
 
-//var fetch_accuweather_location = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/55487?apikey=WEclqK4SZiwIMCdHSgAm5PG9iGB34eHS&details=true&metric=true";
-var fetch_accuweather_location = "json/accuweather.json";
-
-function call_accuweather_data(){
-	
-	document.addEventListener("DOMContentLoaded", function(event) { 
-	
-	fetch(fetch_accuweather_location)
-		.then(function(response) {
-			return response.json();
-		})
-		.then(function(data) {
-		
-			main_accuweather(data);
-
-		})
-		.catch(function(err) {
-			console.log("ERROR (Weather):", err);
-		})
-
-	});
-}
-
-if (call_accuweather_data()) {
-	console.log("here")
-	window.location.reload();
-}
