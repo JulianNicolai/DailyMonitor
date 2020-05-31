@@ -1,0 +1,3 @@
+@echo off
+echo Starting server...
+python -m http.server 1500

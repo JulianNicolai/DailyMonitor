@@ -44,10 +44,10 @@ function main_accuweather(data){
 	document.getElementById("today").childNodes[3].childNodes[3].childNodes[3].childNodes[3].innerHTML = ssStr
 
 	if ((later_time(time, '00:00:00') && later_time(srTime, time)) || later_time(time, ssTime)) {
-		//document.getElementById("today").childNodes[5].childNodes[3].src = todayNightIcon
+		document.getElementById("today").childNodes[5].childNodes[3].src = todayNightIcon
 		document.getElementById("today").childNodes[1].childNodes[3].innerHTML = todayNightWind
     } else {
-		//document.getElementById("today").childNodes[5].childNodes[3].src = todayDayIcon
+		document.getElementById("today").childNodes[5].childNodes[3].src = todayDayIcon
 		document.getElementById("today").childNodes[1].childNodes[3].innerHTML = todayDayWind
     }
 
@@ -78,7 +78,7 @@ function main_accuweather(data){
 		document.getElementById(elementId).childNodes[1].innerHTML = weekday;
 		document.getElementById(elementId + "ht").innerHTML = highTemp + deg;
 		document.getElementById(elementId + "lt").innerHTML = lowTemp + deg;
-		//document.getElementById(elementId + "ico").src = dayWeekIcon
+		document.getElementById(elementId + "ico").src = dayWeekIcon
 		document.getElementById(elementId + "precip").innerHTML = precip;
 		document.getElementById(elementId + "uv").innerHTML = uvIndex;
 

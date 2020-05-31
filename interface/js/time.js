@@ -152,8 +152,8 @@ function main_time(data) {
 	}, offset);
 }
 
-// var fetch_location = "http://worldtimeapi.org/api/ip"
-var fetch_location = "json/time.json"
+var fetch_location = "http://worldtimeapi.org/api/ip"
+//var fetch_location = "json/time.json"
 
 function call_time_data(){
 	

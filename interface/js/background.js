@@ -96,7 +96,7 @@ function main_bg(numOfDayImgs, numOfNightImgs) {
     imgNumStr = make_url(numOfDayImgs, numOfNightImgs);
 
     $('div.bg').addClass('bgFadeOut').one('animationend', function () {
-        url = "url('/interface/img/" + folder + "/" + imgNumStr + "')";
+        url = "url('img/" + folder + "/" + imgNumStr + "')";
         document.querySelector("body > div.bg").style.background = url;
         document.querySelector("body > div.bg").style.backgroundSize = 'cover';
         console.log(url);

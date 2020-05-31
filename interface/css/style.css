@@ -107,10 +107,20 @@ body {
 .weather {
     /* background-color: turquoise; */
     float: left;
-    position: absolute;
+    position: relative;
     bottom: 25px;
     left: 40px;
     width: Calc(100% - 40px);
+}
+
+.weather-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px 30px rgba(0, 0, 0, 0.4);
 }
 
 .forecast {
@@ -148,12 +158,12 @@ body {
 
 .precipitation {
     float: left;
-    margin-left: 12%;
+    margin-left: 14%;
 }
 
 .uv-index {
     float: right;
-    margin-right: 12%;
+    margin-right: 14%;
 }
 
 .precipitation-uv {
