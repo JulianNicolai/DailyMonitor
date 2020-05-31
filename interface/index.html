@@ -45,7 +45,7 @@
             
             <div class="weather">
 
-                <div class="today">
+                <div id="today" class="today">
 
                     <div class="wind">
                         <img class="wind-icon" src="img/icons/wind.svg">
@@ -55,6 +55,7 @@
                     <div class="suntime-icon-wrap">
 
                         <img class="suntime-icon" src="img/icons/suntime.svg">
+
                         <div class="suntime">
                             
                             <div class="sunrise">
@@ -65,60 +66,83 @@
                             <div class="sunset">
                                 <img class="sunset-icon" src="img/icons/arrow.svg">
                                 <div class="sunset-time">8:30 PM</div>
-                            </div>                       
+                            </div>
+
                         </div>
+
                     </div>
 
                     <div class="current-temp-wrap">
                         <div class="current-temp">22°</div>
-                        <img class="current-icon" src="img/weather_icons/partly_sunny.svg">
+                        <img class="current-icon" src="img/weather_icons_text/partly_sunny.svg">
                     </div>
+
                 </div>
 
                 <div class="forecast">
                     <div id="d0" class="day">
                         <div class="weather-weekday" style="text-align: center">TODAY</div>
-                        <img id="d0ico" class="icon" src="img/weather_icons/partly_sunny.svg">
+                        <img id="d0ico" class="icon" src="img/weather_icons_text/partly_sunny.svg">
                         <div class="temp">
-                            <span id="d0ht" class="high">25°</span>
                             <span id="d0lt" class="low">19°</span>
+                            <span id="d0ht" class="high">25°</span>
+                        </div>
+                        <div class="precipitation-uv">
+                            <span id="d0precip" class="precipitation">14 mm</span>
+                            <span id="d0uv" class="uv-index">10 UV</span>
                         </div>
                     </div>
 
                     <div id="d1" class="day">
-                        <div class="weather-weekday">THURS</div>
-                        <div class="div-icon"><img id="d1ico" class="icon" src="img/weather_icons/sunny.svg"></div>
+                        <div class="weather-weekday">THU</div>
+                        <img id="d1ico" class="icon" src="img/weather_icons_text/overcast.svg">
                         <div class="temp">
-                            <span id="d1ht" class="high">22°</span>
                             <span id="d1lt" class="low">14°</span>
+                            <span id="d1ht" class="high">22°</span>
+                        </div>
+                        <div class="precipitation-uv">
+                            <span id="d1precip" class="precipitation">14 mm</span>
+                            <span id="d1uv" class="uv-index">10 UV</span>
                         </div>
                     </div>
 
                     <div id="d2" class="day">
                         <div class="weather-weekday">FRI</div>
-                        <div class="div-icon"><img id="d2ico" class="icon" src="img/weather_icons/showers.svg"></div>
+                        <img id="d2ico" class="icon" src="img/weather_icons_text/partly_sunny_w_t-storms.svg">
                         <div class="temp">
-                            <span id="d2ht" class="high">18°</span>
                             <span id="d2lt" class="low">12°</span>
+                            <span id="d2ht" class="high">18°</span>
+                        </div>
+                        <div class="precipitation-uv">
+                            <span id="d2precip" class="precipitation">14 mm</span>
+                            <span id="d2uv" class="uv-index">10 UV</span>
                         </div>
                     </div>
 
                     <div id="d3" class="day">
                         <div class="weather-weekday">SAT</div>
-                        <div class="div-icon"><img id="d3ico" class="icon" src="img/weather_icons/partly_sunny_w_t-storms.svg"></div>
+                        <img id="d3ico" class="icon" src="img/weather_icons_text/snow_or_flurries.svg">
                         <div class="temp">
-                            <span id="d3ht" class="high">26°</span>
                             <span id="d3lt" class="low">22°</span>
+                            <span id="d3ht" class="high">26°</span>
+                        </div>
+                        <div class="precipitation-uv">
+                            <span id="d3precip" class="precipitation">14 mm</span>
+                            <span id="d3uv" class="uv-index">10 UV</span>
                         </div>
                     </div>
 
                     <div id="d4" class="day">
                         <div class="weather-weekday">SUN</div>
-                        <div class="div-icon"><img id="d4ico" class="icon" src="img/weather_icons/snow_or_flurries.svg"></div>
+                        <img id="d4ico" class="icon" src="img/weather_icons_text/showers.svg">
                         <div class="temp">
-                            <span id="d4ht" class="high">28°</span>
                             <span id="d4lt" class="low">20°</span>
+                            <span id="d4ht" class="high">28°</span>
                         </div>
+                        <div class="precipitation-uv">
+                            <span id="d4precip" class="precipitation">14 mm</span>
+                            <span id="d4uv" class="uv-index">10 UV</span>
+                        </div> 
                     </div>
                 </div>
 

@@ -138,9 +138,8 @@ function main_time(data) {
 			strHr = hour12time[2];
 			ampm = hour12time[3];
 			
-			localStorage.setItem("curSec", strSec);
-			localStorage.setItem("curMin", strMin);
-			localStorage.setItem("curHr", add_zeros(hour24, minute, second)[2]);
+			time = add_zeros(hour24, minute, second)[2] + ":" + strMin + ":" + strSec
+			localStorage.setItem("currTime", time);
 
 			update_clock(strSec, strMin, strHr, ampm, weekday, month, day);
 			
@@ -153,8 +152,8 @@ function main_time(data) {
 	}, offset);
 }
 
-var fetch_location = "http://worldtimeapi.org/api/ip"
-// var fetch_location = "json/time.json"
+// var fetch_location = "http://worldtimeapi.org/api/ip"
+var fetch_location = "json/time.json"
 
 function call_time_data(){
 	
@@ -170,7 +169,7 @@ function call_time_data(){
 
 		})
 		.catch(function(err) {
-			document.write("Error: Time server unavailable<br>", err);
+			console.log("ERROR (Time):", err);
 		})
 
 	});

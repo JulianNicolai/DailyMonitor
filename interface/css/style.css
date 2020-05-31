@@ -140,6 +140,29 @@ body {
     font-size: 35px;
 }
 
+.precipitation, .uv-index {
+    position: relative;
+    font-family: roboto, sans-serif;
+    font-size: 15px;
+}
+
+.precipitation {
+    float: left;
+    margin-left: 12%;
+}
+
+.uv-index {
+    float: right;
+    margin-right: 12%;
+}
+
+.precipitation-uv {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 5%;
+}
+
 .weather-weekday {
     /* background-color: cornflowerblue; */
     width: 100%;
@@ -159,14 +182,14 @@ body {
 
 .high {
     /* background-color: chartreuse; */
-    float: left;
-    margin-left: 8%;
+    float: right;
+    margin-right: 8%;
 }
 
 .low {
     /* background-color: chartreuse; */
-    float: right;
-    margin-right: 8%;
+    float: left;
+    margin-left: 8%;
 }
 
 .today {

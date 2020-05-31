@@ -33,21 +33,23 @@ function later_time(time1, time2) {
     return later;
 }
 
-function make_url(sunriseEpoch, sunsetEpoch, numOfDayImgs, numOfNightImgs) {
+function make_url(numOfDayImgs, numOfNightImgs) {
 
-    var sunriseTime = String(new Date(sunriseEpoch * 1000)).substring(16,24);
-    var sunsetTime = String(new Date(sunsetEpoch * 1000)).substring(16,24);
+    var sunriseTime = localStorage.getItem("todaySunrise");
+    var sunsetTime = localStorage.getItem("todaySunset");
 
     var prefix;
     var night;
 
-    var currentTime = localStorage.getItem("curHr") + ':' + localStorage.getItem("curMin") + ':' + localStorage.getItem("curSec");
+    var currentTime = localStorage.getItem("currTime");
 
     if ((later_time(currentTime, '00:00:00') && later_time(sunriseTime, currentTime)) || later_time(currentTime, sunsetTime)) {
         night = true;
     } else {
         night = false;
     }
+
+    localStorage.setItem("night", night);
 
     if (night == true) {
         numOfImgs = numOfNightImgs;
@@ -89,19 +91,15 @@ function make_filename(imgNum, prefix) {
     return imgNumStr
 }
 
-function main_bg(numOfDayImgs, numOfNightImgs, sunriseEpoch, sunsetEpoch) {
-    var numOfDayImgs = 42;
-    var numOfNightImgs = 28;
-    var sunriseEpoch = 1590312192; 
-    var sunsetEpoch = 1590366989;
+function main_bg(numOfDayImgs, numOfNightImgs) {
 
-    imgNumStr = make_url(sunriseEpoch, sunsetEpoch, numOfDayImgs, numOfNightImgs)
+    imgNumStr = make_url(numOfDayImgs, numOfNightImgs);
 
     $('div.bg').addClass('bgFadeOut').one('animationend', function () {
         url = "url('/interface/img/" + folder + "/" + imgNumStr + "')";
-        document.querySelector("body > div.bg").style.background = url
-        document.querySelector("body > div.bg").style.backgroundSize = 'cover'
-        console.log(url)
+        document.querySelector("body > div.bg").style.background = url;
+        document.querySelector("body > div.bg").style.backgroundSize = 'cover';
+        console.log(url);
         $('div.bg').removeClass('bgFadeOut');
         $('div.bg').addClass('bgFadeIn').one('animationend', function () {
             $('div.bg').removeClass('bgFadeIn');
@@ -109,13 +107,16 @@ function main_bg(numOfDayImgs, numOfNightImgs, sunriseEpoch, sunsetEpoch) {
     });
 }
 
+var numOfDayImgs = 42;
+var numOfNightImgs = 28;    
+
 window.onload = function () {
 
-    main_bg();
+    main_bg(numOfDayImgs, numOfNightImgs);
 
     setInterval(function () {
 
-        main_bg();
+        main_bg(numOfDayImgs, numOfNightImgs);
 
     }, 20000)
 }

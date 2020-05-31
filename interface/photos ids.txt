@@ -1,8 +1,0 @@
-Client ID
-974896258900-baglo0bgtj4ejtm74ipma00qgonsrfup.apps.googleusercontent.com
-
-Client Secret
-KVHzO1REg2gUykERyCy8ir_W
-
-Photos:
-https://imgur.com/a/Pls97

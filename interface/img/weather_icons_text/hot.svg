@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="464pt" viewBox="-144 0 464 464" width="464pt">
+  <style>
+    svg{
+    height:100px;
+    width:100px;
+    }
+    .bubble1{
+      transform-origin: 50px center;
+      transform: scale(.9);
+      animation: popup .5s ease-in-out forwards;
+    }
+    .cel1{
+      transform-origin: center center;
+      transform: scale(.9);
+      animation: popup .5s .4s ease-in-out forwards;
+      opacity: 0;
+    }
+    .cel2{
+      transform-origin: center center;
+      transform: scale(.9);
+      animation: popup .5s .45s ease-in-out forwards;
+      opacity: 0;
+    }
+    .cel3{
+        transform-origin: center center;
+        transform: scale(.9);
+        animation: popup .5s .5s ease-in-out forwards;
+        opacity: 0;
+      }
+    .cel4{
+      transform-origin: center center;
+      animation: popup .5s .55s ease-in-out forwards;
+      opacity: 0;
+      transform: scale(.9);
+    }
+    .cel5{
+      transform-origin: center center;
+      animation: popup .5s .6s ease-in-out forwards;
+      opacity: 0;
+      transform: scale(.9);
+    }
+    .cel6{
+    transform-origin: center center;
+    animation: popup .5s .65s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(.9);
+    }
+    .cel7{
+    transform-origin: center center;
+    animation: popup .5s .7s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(.9);
+    }
+    .cel8{
+    transform-origin: center center;
+    animation: popup .5s .75s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(.9);
+    }
+    .cel9{
+    transform-origin: center center;
+    animation: popup .5s .8s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(.9);
+    }
+
+    .warm{
+      opacity:0;
+      transform: scale(.9);
+      animation: opacity .04s 1.6s linear forwards;
+      transform-origin: 50px center;
+    }
+
+    @keyframes popup {
+      0% {
+        transform: scale(0) scale(.9);
+        opacity: 1;
+      }
+      80% {
+        transform: scale(1.1) scale(.9);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1) scale(.9);
+        opacity: 1;
+      }
+    }
+
+    @keyframes opacity {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1
+      }
+    }
+
+  </style>
+  <g fill="#92aeba">
+    <path class="cel1" d="m168 336h-48c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8h48c4.417969 0 8 3.582031 8 8s-3.582031 8-8 8zm0 0"/>
+    <path class="cel2" d="m152 304h-32c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8h32c4.417969 0 8 3.582031 8 8s-3.582031 8-8 8zm0 0"/>
+    <path class="cel3" d="m168 272h-48c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8h48c4.417969 0 8 3.582031 8 8s-3.582031 8-8 8zm0 0"/>
+    <path class="cel4" d="m152 240h-32c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8h32c4.417969 0 8 3.582031 8 8s-3.582031 8-8 8zm0 0"/>
+    <path class="cel5" d="m168 208h-48c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8h48c4.417969 0 8 3.582031 8 8s-3.582031 8-8 8zm0 0"/>
+    <path class="cel6" d="m152 176h-32c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8h32c4.417969 0 8 3.582031 8 8s-3.582031 8-8 8zm0 0"/>
+    <path class="cel7" d="m168 144h-48c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8h48c4.417969 0 8 3.582031 8 8s-3.582031 8-8 8zm0 0"/>
+    <path class="cel8" d="m152 112h-32c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8h32c4.417969 0 8 3.582031 8 8s-3.582031 8-8 8zm0 0"/>
+    <path class="cel9" d="m168 80h-48c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8h48c4.417969 0 8 3.582031 8 8s-3.582031 8-8 8zm0 0"/>
+  </g>
+  <g>
+    <path  class="bubble1" d="m88 360v-328c0-17.671875-14.328125-32-32-32s-32 14.328125-32 32v328c-15.109375 11.332031-24 29.113281-24 48 0 30.929688 25.070312 56 56 56s56-25.070312 56-56c0-18.886719-8.890625-36.667969-24-48zm0 0" fill="#a3d4f7"/>
+    <path  class="warm" d="m64 377.015625v-313.015625c0-4.417969-3.582031-8-8-8s-8 3.582031-8 8v313.015625c-14.175781 3.050781-24.222656 15.6875-24 30.183594 0 17.675781 14.328125 32 32 32s32-14.324219 32-32c.222656-14.496094-9.824219-27.132813-24-30.183594zm0 0" fill="#ff5b42"/>
+
+    <path  class="bubble1" d="m64 377.015625v-41.015625c0-4.417969-3.582031-8-8-8s-8 3.582031-8 8v41.015625c-14.175781 3.050781-24.222656 15.6875-24 30.183594 0 17.675781 14.328125 32 32 32s32-14.324219 32-32c.222656-14.496094-9.824219-27.132813-24-30.183594zm0 0" fill="#ff5b42">
+      <animate
+        calcMode="spline"
+        keyTimes="0;0.22;0.33;0.55;0.66;0.88;1"
+        keySplines="
+            0.1 0.8 0.2 1;
+            0.1 0.8 0.2 1;
+            0.1 0.8 0.2 1;
+            0.1 0.8 0.2 1;
+            0.1 0.8 0.2 1;
+            0.1 0.8 0.2 1"
+        attributeName="d"
+        begin=".5s"
+        dur="1.5s"
+        from="m64 377.015625v-41.015625c0-4.417969-3.582031-8-8-8s-8 3.582031-8 8v41.015625c-14.175781 3.050781-24.222656 15.6875-24 30.183594 0 17.675781 14.328125 32 32 32s32-14.324219 32-32c.222656-14.496094-9.824219-27.132813-24-30.183594zm0 0"
+        to="m64 377.015625v-313.015625c0-4.417969-3.582031-8-8-8s-8 3.582031-8 8v313.015625c-14.175781 3.050781-24.222656 15.6875-24 30.183594 0 17.675781 14.328125 32 32 32s32-14.324219 32-32c.222656-14.496094-9.824219-27.132813-24-30.183594zm0 0"/>
+
+    </path>
+
+  </g>
+
+</svg>

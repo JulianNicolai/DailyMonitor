@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="472pt" viewBox="0 -1 58.9 58" width="472pt">
+  <style>
+    .cloud{
+      animation: popup .5s ease-in-out forwards, wave 7s .6s ease-in-out infinite;
+      animation-direction: alternate;
+      transform-origin: center center;
+    }
+    .light{
+    opacity: 0;
+    animation: opacity_ligth 6s .7s ease-in infinite;
+    }
+    .drop{
+        transform-origin: center center;
+        animation: popup .5s ease-in forwards, bounce 5s .7s ease-out infinite;
+    }
+    .sun{
+    animation: popup .5s .2s ease-in-out forwards;
+    transform-origin: center center;
+    transform: scale(0);
+    }
+    .sun_waves_left{
+      animation: opacity .3s .5s ease-in-out forwards, move_sun_waves_left 2s .8s ease-in-out infinite;
+      transform-origin: center center;
+      opacity:0;
+    }
+    .sun_waves_right{
+      animation: opacity .3s .5s ease-in-out forwards, move_sun_waves_right 2s .8s ease-in-out infinite;
+      transform-origin: center center;
+      opacity:0;
+    }
+    .sun_waves_farleft{
+      animation: opacity .4s .6s ease-in-out forwards, move_sun_waves_farleft 1.5s .9s ease-in-out infinite;
+      transform-origin: center center;
+      opacity:0;
+    }
+    .sun_waves_top{
+      animation: opacity .4s .6s ease-in-out forwards, move_sun_waves_top 1.5s .9s ease-in-out infinite;
+      transform-origin: center center;
+      opacity:0;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform:  scale(.9) translateY(0);
+      }
+      10% {
+        transform: scale(.9) translateY(2px);
+      }
+      15% {
+        transform: scale(.9) translateY(0px);
+      }
+    }
+    @keyframes opacity_ligth {
+      20% {
+        opacity: 0;
+      }
+      21% {
+        opacity: 1;
+      }
+      22% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 0;
+      }
+      26% {
+        opacity: 1;
+      }
+      27% {
+        opacity: 0;
+      }
+    }
+  @keyframes wave {
+    0% {
+      transform: translate(0px, 0px) scale(.9) ;
+    }
+    30% {
+      transform: translate(5px, 0px) scale(.9) ;
+    }
+    50% {
+      transform: translate(2px, -1px) scale(.9) ;
+    }
+    75% {
+      transform: translate(3px, 0px) scale(.9) ;
+    }
+    100% {
+      transform: translate(0px, 0px) scale(.9) ;
+    }
+  }
+  @keyframes popup {
+    0% {
+      transform: scale(0)
+    }
+    80% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(.9);
+    }
+  }
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes move_sun_waves_left {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(2px, 2px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  @keyframes move_sun_waves_right {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(-2px, 2px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  @keyframes move_sun_waves_top {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(0px, 2px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  @keyframes move_sun_waves_farleft {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(-2px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  </style>
+  <g fill="#fdd020">
+    <path class="sun" d="m51.898438 19.449219c0 7.179687-5.820313 13-13 13-7.179688 0-13-5.820313-13-13 0-7.179688 5.820312-13 13-13 7.179687 0 13 5.820312 13 13zm0 0"/>
+    <path class="sun_waves_farleft" d="m57.898438 20.449219h-2c-.597657 0-1-.398438-1-1 0-.597657.402343-1 1-1h2c.601562 0 1 .402343 1 1 0 .601562-.398438 1-1 1zm0 0"/>
+    <path class="sun_waves_top" d="m37.898438 1.449219c0 .554687-.445313 1-1 1-.550782 0-1-.445313-1-1 0-.550781.449218-1 1-1 .554687 0 1 .449219 1 1zm0 0" fill="#fdd020"/>
+    <path class="sun_waves_right" d="m50.898438 8.449219c-.296876 0-.5-.097657-.699219-.300781-.398438-.398438-.398438-1 0-1.398438l2-2c.402343-.398438 1-.398438 1.402343 0 .398438.398438.398438 1 0 1.398438l-2 2c-.203124.203124-.402343.300781-.703124.300781zm0 0"/>
+  </g>
+  <path class="cloud" d="m45.300781 44.449219c5.699219.101562 10.5-4.398438 10.597657-10.097657.101562-5.703124-4.398438-10.5-10.097657-10.601562-.199219 0-.300781 0-.5 0-.699219 0-1.402343.101562-2.101562.199219-.898438-4-4.398438-6.800781-8.5-6.800781-1.300781 0-2.5.300781-3.597657.800781-2.300781-6-9.101562-8.898438-15-6.597657-4.402343 1.699219-7.300781 5.898438-7.402343 10.597657 0 1.300781.199219 2.601562.699219 3.800781-5.199219 0-9.398438 4.300781-9.398438 9.5s4.199219 9.199219 9.398438 9.199219h.203124" fill="#d0dad9"/>
+  <path class="light" d="m26.898438 30.449219h-8l-4 12h9l-2.796876 14 11.796876-18h-8zm0 0" fill="#ffa754"/>
+  <path class="drop" d="m40.898438 52.449219c0 2.199219-1.796876 4-4 4-2.199219 0-4-1.800781-4-4 0-3 4-10 4-10s4 7 4 10zm0 0" fill="#60a2d7"/>
+</svg>
