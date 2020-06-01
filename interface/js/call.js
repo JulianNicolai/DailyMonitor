@@ -1,8 +1,9 @@
 var fetch_time_location = "http://worldtimeapi.org/api/ip"
 //var fetch_time_location = "json/time.json"
 
-//var fetch_accuweather_location = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/55487?apikey=WEclqK4SZiwIMCdHSgAm5PG9iGB34eHS&details=true&metric=true";
+//var fetch_accuweather_location = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/49559?apikey=WEclqK4SZiwIMCdHSgAm5PG9iGB34eHS&details=true&metric=true";
 var fetch_accuweather_location = "json/accuweather.json";
+// Ottawa: 55487
 
 var numOfDayImgs = 42;
 var numOfNightImgs = 28; 
