@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="480pt" viewBox="0 0 480 480" width="480pt">
+    <style>
+
+        .sun{
+        animation: popup .5s .2s ease-in-out forwards;
+        transform-origin: center center;
+        transform: scale(0);
+        }
+        @keyframes popup {
+        0% {
+            transform: scale(0);
+        }
+        80% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+        }
+
+        @keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        }
+        .sun_wave1{
+        animation: opacity .3s .5s ease-in-out forwards, move_sun_wave1 2s .8s ease-in-out infinite;
+        transform-origin: center center;
+        opacity:0;
+        }
+        @keyframes move_sun_wave1 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(0px, -5px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+        }
+
+        .sun_wave2{
+        animation: opacity .3s .5s ease-in-out forwards, move_sun_wave2 2s .8s ease-in-out infinite;
+        transform-origin: center center;
+        opacity:0;
+        }
+        @keyframes move_sun_wave2 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(0px, 5px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+        }
+
+        .sun_wave3{
+        animation: opacity .4s .6s ease-in-out forwards, move_sun_wave3 1.5s .9s ease-in-out infinite;
+        transform-origin: center center;
+        opacity:0;
+        }
+        @keyframes move_sun_wave3 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(-5px, -5px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+        }
+
+        .sun_wave4{
+        animation: opacity .4s .6s ease-in-out forwards, move_sun_wave4 1.5s .9s ease-in-out infinite;
+        transform-origin: center center;
+        opacity:0;
+        }
+        @keyframes move_sun_wave4 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(5px, 5px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+        }
+
+        .sun_wave5{
+        animation: opacity .4s .6s ease-in-out forwards, move_sun_wave5 1.5s .9s ease-in-out infinite;
+        transform-origin: center center;
+        opacity:0;
+        }
+        @keyframes move_sun_wave5 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(5px, -5px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+        }
+
+        .sun_wave6{
+        animation: opacity .3s .5s ease-in-out forwards, move_sun_wave6 2s .8s ease-in-out infinite;
+        transform-origin: center center;
+        opacity:0;
+        }
+        @keyframes move_sun_wave6 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(0px, 5px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+        }
+
+        .sun_wave7{
+        animation: opacity .4s .6s ease-in-out forwards, move_sun_wave7 1.5s .9s ease-in-out infinite;
+        transform-origin: center center;
+        opacity:0;
+        }
+        @keyframes move_sun_wave7 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(-5px, 5px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+        }
+
+        .sun_wave8{
+        animation: opacity .3s .5s ease-in-out forwards, move_sun_wave8 2s .8s ease-in-out infinite;
+        transform-origin: center center;
+        opacity:0;
+        }
+        @keyframes move_sun_wave8 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(-5px, 0px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+        }
+
+        .sun_wave9{
+        animation: opacity .3s .5s ease-in-out forwards, move_sun_wave9 2s .8s ease-in-out infinite;
+        transform-origin: center center;
+        opacity:0;
+        }
+        @keyframes move_sun_wave9 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(5px, 0px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+        }
+    </style>
+    <g class="moon" transform="scale(0.75) translate(80 80)">
+        <circle cx="240" cy="240" r="230" fill="#F4E8DC"/>
+        <path d=" m77.365 77.365 a230 230 0 0 0 325.27 325.27 332 332 0 0 1 -325.27 -325.27z" fill="#C8BBB3"/>
+        <g fill="#C8BBB3" stroke="#F4E8DC" stroke-width="4">
+            <circle cx="111" cy="220" r="18" />
+            <circle cx="200" cy="280" r="10" />
+            <circle cx="160" cy="120" r="50" />
+            <circle cx="300" cy="380" r="28" />
+            <circle cx="300" cy="240" r="32" />
+            <circle cx="330" cy="140" r="23" />
+            <circle cx="260" cy="160" r="12" />
+            <circle cx="220" cy="42" r="15" />
+            <circle cx="440" cy="260" r="7" />
+        </g>
+    </g>
+    
+</svg>

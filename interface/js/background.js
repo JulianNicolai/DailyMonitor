@@ -96,13 +96,17 @@ function main_bg(numOfDayImgs, numOfNightImgs) {
     imgNumStr = make_url(numOfDayImgs, numOfNightImgs);
 
     $('div.bg').addClass('bgFadeOut').one('animationend', function () {
+        document.querySelector("body > div.bg").style.opacity = '0';
         url = "url('img/" + folder + "/" + imgNumStr + "')";
         document.querySelector("body > div.bg").style.background = url;
         document.querySelector("body > div.bg").style.backgroundSize = 'cover';
         console.log(url);
         $('div.bg').removeClass('bgFadeOut');
-        $('div.bg').addClass('bgFadeIn').one('animationend', function () {
-            $('div.bg').removeClass('bgFadeIn');
-        });
+        setTimeout(function() {
+            document.querySelector("body > div.bg").style.opacity = '1';
+            $('div.bg').addClass('bgFadeIn').one('animationend', function () {
+                $('div.bg').removeClass('bgFadeIn');
+            });
+        }, 1000);
     });
 }

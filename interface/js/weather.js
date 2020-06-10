@@ -58,9 +58,10 @@ function main_accuweather(data){
 
 	for (day = 0; day < 5; day++) {
 		weekday = String(new Date(parseInt(data.DailyForecasts[day].EpochDate) * 1000)).substring(0, 3).toUpperCase();
+		dayWeekIcon = imgPath + String(data.DailyForecasts[day].Day.Icon) + ".svg";
 		highTemp = Math.round(data.DailyForecasts[day].Temperature.Maximum.Value);
 		lowTemp = Math.round(data.DailyForecasts[day].Temperature.Minimum.Value);
-		dayWeekIcon = imgPath + String(data.DailyForecasts[day].Day.Icon) + ".svg";
+		
 		uvIndex = "UV " + String(data.DailyForecasts[day].AirAndPollen[5].Value)
 		precip = "0 mm";
 		
