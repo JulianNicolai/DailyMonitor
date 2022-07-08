@@ -119,6 +119,7 @@ body {
     bottom: 0;
     left: 0;
     padding-top: 20px;
+    height: 29.2vh;
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 20px 30px rgba(0, 0, 0, 0.4);
 }
@@ -127,8 +128,9 @@ body {
     /* background-color: cyan; */
     position: absolute;
     bottom: 0;
-    margin-left: 20%;
-    width: Calc(80% - 40px);
+    margin-left: 22%;
+    width: Calc(78% - 40px);
+    height: 100%;
 }
 
 .day {
@@ -286,13 +288,13 @@ body {
     z-index: inherit;
 }
 
-#d1ds-garb {display: inline-block;}
-#d1ds-blue {display: inline-block;}
-/* #d1ds-blak {display: inline-block;} */
-#d1ds-gren {display: inline-block;}
+#d0ds-garb {display: inline-block;}
+#d0ds-blue {display: inline-block;}
+#d0ds-blak {display: inline-block;}
+#d0ds-gren {display: inline-block;}
 
 .disposal-schedule {
-    --number-of-methods: 3;
+    --number-of-methods: 4;
     height: 15px;
     z-index: 5;
     font-size: 0;
@@ -302,4 +304,76 @@ body {
     margin: 0 auto;
     margin-bottom: -10px;
     margin-top: -4px;
+}
+
+.tasks {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 350px;
+    height: 500px;
+    /* background-color: aqua; */
+}
+
+.task {
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 106px;
+    border-radius: 10px;
+}
+
+.task-title {
+    font: 500 20px Roboto, sans-serif;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 270px;
+}
+
+.task-desc {
+    font: 300 16px Roboto, sans-serif;
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+.task-hline {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    width: 310px;
+    height: 1px;
+    background-color: rgba(255,255,255, 0.4);
+}
+
+.task-icon {
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+
+.task-icon-img {
+    height: 30px;
+}
+
+.task-day {
+    font: 300 12px Roboto, sans-serif;
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    width: 220px;
+}
+
+.task-freq {
+    font: 300 12px Roboto, sans-serif;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }

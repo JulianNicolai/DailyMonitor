@@ -25,14 +25,14 @@ function add_zeros(hour, minute, second) {
 		strHr = String(hour);
 	}
 
-	return [strSec, strMin, strHr]
+	return [strSec, strMin, strHr];
 }
 
-function hour12_adjust(second, minute, hour, hour24, ampm){
+function hour12_adjust(second, minute, hour, hour24, ampm) {
 	
-	var strSec;
-	var strMin;
-	var strHr;
+	let strSec;
+	let strMin;
+	let strHr;
 	
 	if (hour24 > 12) {
 		hour = hour24 - 12;
@@ -50,20 +50,20 @@ function hour12_adjust(second, minute, hour, hour24, ampm){
 	
 	timeArr = add_zeros(hour, minute, second);
 	
-	return [timeArr[0], timeArr[1], timeArr[2], ampm]
+	return [timeArr[0], timeArr[1], timeArr[2], ampm];
 }
 
-function clock_change(second, minute, hour24){
-	second++
+function clock_change(second, minute, hour24) {
+	second++;
 	// console.log(second)
 	if (second >= 60) {
 		second = 0;
-		minute++
+		minute++;
 	} 
 
 	if (minute >= 60) {
 		minute = 0;
-		hour24++
+		hour24++;
 	}
 
 	if (hour24 >= 24) {
@@ -71,45 +71,45 @@ function clock_change(second, minute, hour24){
 		// console.log("New Day!")
 	}
 	
-	return [second, minute, hour24]
+	return [second, minute, hour24];
 }
 
 function main_time(data) {
-	var timeDate = data.datetime;
-	var weekday = data.day_of_week;
+	let timeDate = data.datetime;
+	let weekday = data.day_of_week;
 
-//	var year = parseInt(timeDate.substring(0,4));
-	var month = parseInt(timeDate.substring(5,7)) - 1;
-	var day = parseInt(timeDate.substring(8,10));
-	var hour24 = parseInt(timeDate.substring(11,13));
-	var hour;
-	var minute = parseInt(timeDate.substring(14,16));
-	var second = parseInt(timeDate.substring(17,19));
-	var millisecond = parseInt(timeDate.substring(20,23));
-	var offset = 1000 - millisecond;
-	var ampm = "";
+//	let year = parseInt(timeDate.substring(0,4));
+	let month = parseInt(timeDate.substring(5,7)) - 1;
+	let day = parseInt(timeDate.substring(8,10));
+	let hour24 = parseInt(timeDate.substring(11,13));
+	let hour;
+	let minute = parseInt(timeDate.substring(14,16));
+	let second = parseInt(timeDate.substring(17,19));
+	let millisecond = parseInt(timeDate.substring(20,23));
+	let offset = 1000 - millisecond;
+	let ampm = "";
 
-	var strSec;
-	var strMin;
-	var strHr;
-//	var strDay = String(day);
-//	var strMonth = String(month);
+	let strSec;
+	let strMin;
+	let strHr;
+//	let strDay = String(day);
+//	let strMonth = String(month);
 
-	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "Septmeber", "October", "November", "December"];
-	var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+	let months = ["January", "February", "March", "April", "May", "June", "July", "August", "Septmeber", "October", "November", "December"];
+	let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 	
-	var clock;
+	let clock;
 	
 	month = months[month];
 	weekday = weekdays[weekday];
 
-	var time = clock_change(second, minute, hour24)
+	let time = clock_change(second, minute, hour24);
 
 	second = time[0];
 	minute = time[1];
 	hour24 = time[2];
 
-	var hour12time = hour12_adjust(second, minute, hour, hour24, ampm);
+	let hour12time = hour12_adjust(second, minute, hour, hour24, ampm);
 
 	strSec = hour12time[0];
 	strMin = hour12time[1];
@@ -120,7 +120,7 @@ function main_time(data) {
 	localStorage.setItem("currentMin", strMin);
 	localStorage.setItem("currentHr", add_zeros(hour24, minute, second)[2]);
 
-	update_clock(strSec, strMin, strHr, ampm, weekday, month, day)
+	update_clock(strSec, strMin, strHr, ampm, weekday, month, day);
 	
 	setTimeout(function() {
 		clock = setInterval(function() {
@@ -138,7 +138,7 @@ function main_time(data) {
 			strHr = hour12time[2];
 			ampm = hour12time[3];
 			
-			time = add_zeros(hour24, minute, second)[2] + ":" + strMin + ":" + strSec
+			time = add_zeros(hour24, minute, second)[2] + ":" + strMin + ":" + strSec;
 			localStorage.setItem("currTime", time);
 
 			update_clock(strSec, strMin, strHr, ampm, weekday, month, day);

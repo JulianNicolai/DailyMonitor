@@ -1,0 +1,72 @@
+{
+    "kitchen": {
+        "title": "Clean Kitchen",
+        "description": "Wipedown countertop and oven, quick organize",
+        "frequency": "Twice every week",
+        "freqeucnyID": 0,
+        "responsible": "both"
+    },
+    "washroomSurfaces": {
+        "title": "Clean Washroom Mirror, Sink, Counter",
+        "description": "General wipedown of surfaces, use general purpose cleaner",
+        "frequency": "Every week",
+        "freqeucnyID": 1,
+        "responsible": "julian"
+    },
+    "toilet": {
+        "title": "Clean Toilet",
+        "description": "Use toilet cleaner and brush, clean inside and outside",
+        "frequency": "Every week",
+        "freqeucnyID": 1,
+        "responsible": "shino"
+    },
+    "kitchenFloor": {
+        "title": "Clean Kitchen Floor",
+        "description": "Sweep and vacuum tiled floor area",
+        "frequency": "Every week",
+        "freqeucnyID": 1,
+        "responsible": "shino"
+    },
+    "fridge": {
+        "title": "Clean Fridge",
+        "description": "Dispose of any old food and clean leaks",
+        "frequency": "Every 2 weeks",
+        "freqeucnyID": 2,
+        "responsible": "both"
+    },
+    "microwaveToasterOven": {
+        "title": "Clean Mircrowave and Toaster Oven",
+        "description": "Wipedown inside microwave and clean the crums from toaster oven",
+        "frequency": "Every 2 weeks",
+        "freqeucnyID": 2,
+        "responsible": "alternate"
+    },
+    "livingRoom": {
+        "title": "Clean Living Room Area",
+        "description": "Vacuum and Swiffer hardwood floor area",
+        "frequency": "Every 2 weeks",
+        "freqeucnyID": 2,
+        "responsible": "julian"
+    },
+    "shower": {
+        "title": "Clean Shower",
+        "description": "Clean with Vim and scrub brush",
+        "frequency": "Every month",
+        "freqeucnyID": 3,
+        "responsible": "shino"
+    },
+    "miscGenPurpCloths": {
+        "title": "Clean Miscellaneous Cloths/Fabrics",
+        "description": "Wash shower curtain, dirty dish towels and cloths, and bath mat",
+        "frequency": "Every month",
+        "freqeucnyID": 3,
+        "responsible": "alternate"
+    },
+    "furniture": {
+        "title": "Wipe Down Furniture ",
+        "description": "Wipedown tables, TV, and TV stand, other miscellaneous furniture",
+        "frequency": "Every month",
+        "freqeucnyID": 3,
+        "responsible": "julian"
+    }
+}

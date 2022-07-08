@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+    <style>
+    .st0s{fill:#2a91db;}
+    .st1s{
+        font: 600px Roboto, sans-serif; 
+        font-weight: bold;
+        fill: white;
+    }
+    .st0j{fill:#a62828;}
+    .st1j{
+        font: 600px Roboto, sans-serif; 
+        font-weight: bold;
+        fill: white;
+    }
+    </style>
+
+    <defs>
+        <clipPath id="cut-off-left">
+            <rect x="0" y="0" width="500" height="1000" />
+        </clipPath>
+        <clipPath id="cut-off-right">
+            <rect x="500" y="0" width="500" height="1000" />
+        </clipPath>
+    </defs>
+
+    <circle class="st0s" cx="500px" cy="500px" r="500px" clip-path="url(#cut-off-right)"/>
+    <text class="st1s" x="540px" y="720px" clip-path="url(#cut-off-right)">S</text>
+    <circle class="st0j" cx="500px" cy="500px" r="500px" clip-path="url(#cut-off-left)"/>
+    <text class="st1j" x="110px" y="720px" clip-path="url(#cut-off-left)">J</text>
+</svg>

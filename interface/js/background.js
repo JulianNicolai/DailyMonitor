@@ -2,15 +2,15 @@ function later_time(time1, time2) {
     // Is time1 later than time2? Format of time vars:
     // time1 = "12:01:56"
     // time2 = "13:04:52"
-    var later;
+    let later;
 
-    var t1Hr = parseInt(time1.substring(0,2));
-    var t1Min = parseInt(time1.substring(3,5));
-    var t1Sec = parseInt(time1.substring(6,8));
+    let t1Hr = parseInt(time1.substring(0,2));
+    let t1Min = parseInt(time1.substring(3,5));
+    let t1Sec = parseInt(time1.substring(6,8));
 
-    var t2Hr = parseInt(time2.substring(0,2));
-    var t2Min = parseInt(time2.substring(3,5));
-    var t2Sec = parseInt(time2.substring(6,8));
+    let t2Hr = parseInt(time2.substring(0,2));
+    let t2Min = parseInt(time2.substring(3,5));
+    let t2Sec = parseInt(time2.substring(6,8));
 
     if (t1Hr > t2Hr) {
         later = true;
@@ -35,13 +35,13 @@ function later_time(time1, time2) {
 
 function make_url(numOfDayImgs, numOfNightImgs) {
 
-    var sunriseTime = localStorage.getItem("todaySunrise");
-    var sunsetTime = localStorage.getItem("todaySunset");
+    let sunriseTime = localStorage.getItem("todaySunrise");
+    let sunsetTime = localStorage.getItem("todaySunset");
 
-    var prefix;
-    var night;
+    let prefix;
+    let night;
 
-    var currentTime = localStorage.getItem("currTime");
+    let currentTime = localStorage.getItem("currTime");
 
     if ((later_time(currentTime, '00:00:00') && later_time(sunriseTime, currentTime)) || later_time(currentTime, sunsetTime)) {
         night = true;
@@ -61,15 +61,15 @@ function make_url(numOfDayImgs, numOfNightImgs) {
         folder = 'day';
     }
 
-    imgNum = Math.floor(Math.random() * (numOfImgs - 1))
+    imgNum = Math.floor(Math.random() * (numOfImgs - 1));
 
-    make_filename(imgNum, prefix)
+    make_filename(imgNum, prefix);
 
-    console.log("now: " + currentTime)
-    console.log("sr: " + sunriseTime)
-    console.log("ss: " + sunsetTime)
+    console.log("now: " + currentTime);
+    console.log("sr: " + sunriseTime);
+    console.log("ss: " + sunsetTime);
 
-    return imgNumStr
+    return imgNumStr;
 }
 
 function make_filename(imgNum, prefix) {
@@ -77,18 +77,18 @@ function make_filename(imgNum, prefix) {
     if (imgNum < 1000) {
         if (imgNum < 100) {
             if (imgNum < 10) {
-                imgNumStr = prefix + '000' + String(imgNum) + '.jpg'
+                imgNumStr = prefix + '000' + String(imgNum) + '.jpg';
             } else {
-                imgNumStr = prefix + '00' + String(imgNum) + '.jpg'
+                imgNumStr = prefix + '00' + String(imgNum) + '.jpg';
             }
         } else {
-            imgNumStr = prefix + '0' + String(imgNum) + '.jpg'
+            imgNumStr = prefix + '0' + String(imgNum) + '.jpg';
         }
     } else {
-        imgNumStr = prefix + String(imgNum) + '.jpg'
+        imgNumStr = prefix + String(imgNum) + '.jpg';
     }
 
-    return imgNumStr
+    return imgNumStr;
 }
 
 function main_bg(numOfDayImgs, numOfNightImgs) {

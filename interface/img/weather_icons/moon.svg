@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="480pt" viewBox="-30 -30 540 540" width="480pt" style="animation: glow 5s .2s ease-in-out infinite;">
+    <style>
+
+        .moon {
+            animation: popup .5s .2s ease-in-out forwards;
+            transform-origin: center center;
+        }
+        @keyframes popup {
+            0% {
+                transform: scale(0);
+            }
+            80% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes glow {
+            0% {
+                filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0))
+            }
+            50% {
+                filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1))
+            }
+            100% {
+                filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0))
+            }
+        }
+
+    </style>
+    <g class="moon">
+        <circle cx="240" cy="240" r="230" fill="#F4E8DC"/>
+        <path d=" m77.365 77.365 a230 230 0 0 0 325.27 325.27 332 332 0 0 1 -325.27 -325.27z" fill="#C8BBB3"/>
+        <g fill="#C8BBB3" stroke="#F4E8DC" stroke-width="4">
+            <circle cx="111" cy="220" r="18" />
+            <circle cx="200" cy="280" r="10" />
+            <circle cx="160" cy="120" r="50" />
+            <circle cx="300" cy="380" r="28" />
+            <circle cx="300" cy="240" r="32" />
+            <circle cx="330" cy="140" r="23" />
+            <circle cx="260" cy="160" r="12" />
+            <circle cx="220" cy="42" r="15" />
+            <circle cx="440" cy="260" r="7" />
+        </g>
+    </g>
+    
+</svg>
